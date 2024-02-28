@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const userName = prompt("Username: ");
+        if (userName === "Admin") {
+            const password = prompt("Password: ");
+            if (password === "TheMaster") {
+                alert("Welcome!");
+            }
+            else if (password === "" || password === null) {
+                alert("Cancelled");
+            }
+            else {
+                alert("Wrong Password");
+            }
+
+        }
+        else if (userName === "" || userName === null) {
+            alert("Cancel");
+        }
+        else {
+            alert("I don't know you")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
